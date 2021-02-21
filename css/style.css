@@ -20,7 +20,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 2%;
+   
 
    
 }
@@ -138,7 +138,10 @@ main section img {
 
 .box2{
     width:100%;
-    height: auto;
+    min-height: 200px;
+    max-height: 200px;
+    background-image: url("../pics/lights.jpg");
+    background-size: cover;
     border-left: solid tomato 1px;
     border-top: solid tomato 1px;
     border-bottom: solid tomato 1px;
