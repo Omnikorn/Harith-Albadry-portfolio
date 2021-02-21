@@ -14,6 +14,7 @@ body{
     background-color: black;
     }
 
+/* header styling */
 header{
     position:relative;
     display: flex;
@@ -29,9 +30,11 @@ header h1 {
     top:12%;
     margin-left: 2%;
     font-family: 'Nunito', sans-serif;
-    }
+    font-size: 3rem;
+}
+    
 
-body header div{
+ header div{
     width:100%;
     height: 40px;
 }
@@ -78,7 +81,10 @@ padding: 10%;
 
 .stripe3{
     background-color: darkorchid;
+    margin-bottom: 0;
 }
+
+/* Main body styling */
 main{
     display: flex;
     flex-wrap: wrap;
@@ -91,12 +97,18 @@ body header h1{
     
 }
 .hero_banner{
-     background-color: blueviolet;
-    
+     background-image: url("../pics/hero.png");
      width: 100%;
      height: auto;
      background-position: center;
      text-align: right;
+     margin-top: 0;
+     
+}
+.hero_banner h2{
+    margin-right: 2%;
+    font-size: 2rem;
+
 }
 .standard{
     color: white;
@@ -125,7 +137,7 @@ main section img {
 }
 
 .box2{
-    width:100%
+    width:100%;
     height: auto;
     border-left: solid tomato 1px;
     border-top: solid tomato 1px;
@@ -137,6 +149,9 @@ main section img {
 .box3{
     width:49.1%;
     height: auto;
+    background-image: url("../pics/lens.jpg");
+    
+    background-position: center;
     border-left: solid darkorchid 1px;
     border-top: solid darkorchid 1px;
     border-bottom: solid darkorchid 1px;
@@ -145,9 +160,15 @@ main section img {
 
 }
 
+
+
+
 .box4{
     width:49.1%;
     height: auto;
+    background-image: url("../pics/engin.jpg");
+    background-position:center;
+
     border-left: solid darkorchid 1px;
     border-top: solid darkorchid 1px;
     border-bottom: solid darkorchid 1px;
@@ -180,6 +201,9 @@ main section img {
     border-bottom: solid darkorchid 1px;
     border-right: tomato solid 20px;
 }
+
+/* Footer styling*/
+
 footer {
     display: flex;
     flex-flow: column;
@@ -189,6 +213,9 @@ footer {
     color: white;
     background: tomato;
 }
+
+
+/* Responsiveness */
 
 @media screen and (max-width: 980px) {
     header ul{
