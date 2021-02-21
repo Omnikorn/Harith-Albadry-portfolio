@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     color: white;
+    margin: 0
 }
 
 h1{
@@ -125,6 +126,13 @@ body header h1{
     padding: 1%;
     border-left: tomato 2px solid;
 }
+
+.standard div{
+    background-color: rgb(47, 53, 52);
+    max-width: fit-content;
+    padding: 1%;
+    border-left: tomato 2px solid;   
+}
 main section img {
     width: 20%;
     height: auto;
@@ -189,6 +197,9 @@ main section img {
 .box5{
     width:49.1%;
     height: auto;
+    background-image: url("../pics/p1.jpg");
+    background-position: center;
+    background-size: cover;
     border-left: solid darkorchid 1px;
     border-top: solid darkorchid 1px;
     border-bottom: solid darkorchid 1px;
@@ -197,6 +208,9 @@ main section img {
 .box6{
     width:49.1%;
     height: auto;
+    background-image: url("../pics/blue1.jpg");
+    background-position: center;
+    background-size: cover;
     border-left: solid darkorchid 1px;
     border-top: solid darkorchid 1px;
     border-bottom: solid darkorchid 1px;
