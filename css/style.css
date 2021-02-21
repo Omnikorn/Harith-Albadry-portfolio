@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    color: white;
 }
 
 h1{
@@ -58,12 +59,12 @@ header ul li:hover {
     border: white 2px dotted;
     color: white;
 }
-header ul li div {
-transform: skew(11deg);
+header ul li a {
+/* transform: skew(11deg); */
 background-color: transparent;
 font-size: 20px;
 font-weight: 900;
-font-family:Verdana, Geneva, Tahoma, sans-serif; 
+font-family: 'Nunito', sans-serif;
 padding: 10%;
 }
 
@@ -88,6 +89,14 @@ body header h1{
     color: white;
     font-size: 200%;
     
+}
+.hero_banner{
+     background-color: blueviolet;
+    
+     width: 100%;
+     height: auto;
+     background-position: center;
+     text-align: right;
 }
 .standard{
     color: white;
@@ -180,3 +189,27 @@ footer {
     color: white;
     background: tomato;
 }
+
+@media screen and (max-width: 980px) {
+    header ul{
+        position: unset;
+        display: block;
+        display: flex;
+        justify-content:flex-end;
+        list-style: none;
+    }
+
+    .main{ 
+        flex-direction: column;
+    }
+   .box2,
+   .box3,
+   .box4,
+   .box4,
+   .box5,
+   .box6,
+   .box7 {
+
+       min-width: 100%;
+   }
+  }
