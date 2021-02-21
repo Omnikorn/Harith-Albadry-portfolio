@@ -118,6 +118,13 @@ body header h1{
    
     
 }
+
+.standard h2{
+    background-color: rgb(47, 53, 52);
+    max-width: fit-content;
+    padding: 1%;
+    border-left: tomato 2px solid;
+}
 main section img {
     width: 20%;
     height: auto;
@@ -205,6 +212,7 @@ main section img {
     border-right: tomato solid 20px;
 }
 
+
 /* Footer styling*/
 
 footer {
@@ -217,6 +225,16 @@ footer {
     background: tomato;
 }
 
+.contact {
+    font-size: 2rem;
+ line-height: 2;
+  font-family:'Nunito', sans-serif;
+  list-style: none;
+}
+
+.contact li{
+    margin-left: 2%;
+}
 
 /* Responsiveness */
 
