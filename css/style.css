@@ -1,3 +1,4 @@
+/* Web site color pallete  */
 :root {
     --bright:tomato;
     --dark: darkorchid;
@@ -23,7 +24,7 @@ body{
 
 /* header styling */
 header{
-    position:relative;
+    /* position:relative; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,8 +32,10 @@ header{
 }
 
 header h1 {
-    position: absolute;
-    top:12%;
+    /* position: absolute; */
+    /* top:12%; */
+    margin-bottom: -2%;
+    z-index: 1;
     margin-left: 2%;
     font-family: 'Nunito', sans-serif;
     font-size: 3rem;
@@ -44,11 +47,14 @@ header h1 {
     height: 40px;
 }
 header ul{
-    position: absolute;
+    /* position: absolute;
     left:72%;
-    top: 10%;
+    top: 10%; */
+    margin-bottom: 2%;
+    margin-top: -4%;
     display: flex;
     justify-content:flex-end;
+    flex-shrink: 1;
     list-style: none;
 }
 
@@ -86,7 +92,7 @@ padding: 10%;
 
 .stripe3{
     background-color: var(--dark);
-    margin-bottom: 0;
+    margin-bottom: -1%;
 }
 
 /* Main body styling */
@@ -104,7 +110,8 @@ body header h1{
 .hero_banner{
      background-image: url("../pics/hero.png");
      width: 100%;
-     height: auto;
+     /* height: auto; */
+     min-height: 100px;
      background-position: center;
      text-align: right;
      margin-top: 0;
