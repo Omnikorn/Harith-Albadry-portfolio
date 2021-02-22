@@ -1,3 +1,9 @@
+:root {
+    --bright:tomato;
+    --dark: darkorchid;
+    --middle: cornflowerblue;
+}
+
 *{
     box-sizing: border-box;
     color: white;
@@ -21,9 +27,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-   
-
-   
+  
 }
 
 header h1 {
@@ -73,15 +77,15 @@ padding: 10%;
 }
 
 .stripe1{
-    background-color: tomato;
+    background-color: var(--bright)
 }
 
 .stripe2{
-    background-color: cornflowerblue;
+    background-color: var(--middle);
 }
 
 .stripe3{
-    background-color: darkorchid;
+    background-color: var(--dark);
     margin-bottom: 0;
 }
 
@@ -124,7 +128,7 @@ body header h1{
     background-color: rgb(47, 53, 52);
     max-width: fit-content;
     padding: 1%;
-    border-left: tomato 2px solid;
+    border-left: var(--bright) 2px solid;
 }
 
 .standard div{
@@ -143,10 +147,10 @@ main section img {
 .bigbox{
     width:100%;
     height: auto;
-    border-left: solid cornflowerblue 1px;
-    border-top:cornflowerblue 1px solid;
-    border-bottom: cornflowerblue 1px solid;
-    border-right: 20px tomato solid;
+    border-left: solid var(--dark) 1px;
+    border-top:var(--dark) 1px solid;
+    border-bottom: var(--dark) 1px solid;
+    border-right: 20px var(--bright) solid;
     
       
 }
@@ -157,10 +161,10 @@ main section img {
     max-height: 200px;
     background-image: url("../pics/lights.jpg");
     background-size: cover;
-    border-left: solid tomato 1px;
-    border-top: solid tomato 1px;
-    border-bottom: solid tomato 1px;
-    border-right: darkorchid solid 20px;
+    border-left: solid var(--bright) 1px;
+    border-top: solid var(--bright) 1px;
+    border-bottom: solid var(--bright) 1px;
+    border-right: var(--dark) solid 20px;
     
 }
 
@@ -170,10 +174,10 @@ main section img {
     background-image: url("../pics/lens.jpg");
     
     background-position: center;
-    border-left: solid darkorchid 1px;
-    border-top: solid darkorchid 1px;
-    border-bottom: solid darkorchid 1px;
-    border-right: cornflowerblue solid 20px;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
+    border-right: var(--middle) solid 20px;
     
 
 }
@@ -187,10 +191,10 @@ main section img {
     background-image: url("../pics/engin.jpg");
     background-position:center;
 
-    border-left: solid darkorchid 1px;
-    border-top: solid darkorchid 1px;
-    border-bottom: solid darkorchid 1px;
-    border-right: tomato solid 20px;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
+    border-right: var(--bright) solid 20px;
     
 
 }
@@ -200,10 +204,10 @@ main section img {
     background-image: url("../pics/p1.jpg");
     background-position: center;
     background-size: cover;
-    border-left: solid darkorchid 1px;
-    border-top: solid darkorchid 1px;
-    border-bottom: solid darkorchid 1px;
-    border-right: tomato solid 20px;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
+    border-right: var(--bright) solid 20px;
 }
 .box6{
     width:49.1%;
@@ -211,32 +215,19 @@ main section img {
     background-image: url("../pics/blue1.jpg");
     background-position: center;
     background-size: cover;
-    border-left: solid darkorchid 1px;
-    border-top: solid darkorchid 1px;
-    border-bottom: solid darkorchid 1px;
-    border-right: tomato solid 20px;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
+    border-right: var(--bright) solid 20px;
 }
 
 .box7{
     width:100%;
     height: auto;
-    border-left: solid darkorchid 1px;
-    border-top: solid darkorchid 1px;
-    border-bottom: solid darkorchid 1px;
-    border-right: tomato solid 20px;
-}
-
-
-/* Footer styling*/
-
-footer {
-    display: flex;
-    flex-flow: column;
-    justify-content: stretch;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
-    color: white;
-    background: tomato;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
+    border-right: var(--bright) solid 20px;
 }
 
 .contact {
@@ -248,7 +239,25 @@ footer {
 
 .contact li{
     margin-left: 2%;
+    transition: all ease-in 0.25s; 
 }
+
+.contact > li:hover {
+    background-color:var(--bright);
+}
+/* Footer styling*/
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background:var(--bright);
+}
+
+
 
 /* Responsiveness */
 
