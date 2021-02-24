@@ -8,48 +8,45 @@
 *{
     box-sizing: border-box;
     color: white;
-    margin: 0
+    margin: 0;
+    line-height:1.5;
+    font-size: 16px;
 }
 
-h1{
+h1,
+h2
+{
     font-family:'Nunito', sans-serif;
 }
 
-h2 {
-    font-family: 'Nunito', sans-serif;
-}
+
 body{
     background-color: black;
     }
 
 /* header styling */
+
 header{
-    /* position:relative; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   
 }
 
-header h1 {
-    /* position: absolute; */
-    /* top:12%; */
+header> h1 {
     margin-bottom: -2%;
     z-index: 1;
     margin-left: 2%;
-    font-family: 'Nunito', sans-serif;
     font-size: 3rem;
 }
     
 
- header div{
+ header>div{
     width:100%;
-    height: 40px;
+    min-height: 40px;
 }
-header ul{
-    /* position: absolute;
-    left:72%;
-    top: 10%; */
+header> ul{
+    
     margin-bottom: 2%;
     margin-top: -4%;
     display: flex;
@@ -58,12 +55,12 @@ header ul{
     list-style: none;
 }
 
-header ul li{
+header> ul >li{
     height: 50px;
     width:100px;
     margin-right: 10px;
     margin-top: 0px;
-    background-color: rgb(141, 211, 202);
+    background-color: rgb(73, 112, 107);
     transform: skew(-11deg);
     
 }
@@ -73,15 +70,16 @@ header ul li:hover {
     border: white 2px dotted;
     color: white;
 }
-header ul li a {
-/* transform: skew(11deg); */
+header>ul> li> a {
+
 background-color: transparent;
 font-size: 20px;
 font-weight: 900;
 font-family: 'Nunito', sans-serif;
-padding: 10%;
+padding: 20%;
 }
 
+/* Header stripes */
 .stripe1{
     background-color: var(--bright)
 }
@@ -102,7 +100,9 @@ main{
     
     
 }
-body header h1{
+
+/* Hero Banner */
+body> header> h1{
     color: white;
     font-size: 200%;
     
@@ -110,7 +110,7 @@ body header h1{
 .hero_banner{
      background-image: url("../pics/hero.png");
      width: 100%;
-     /* height: auto; */
+     
      min-height: 100px;
      background-position: center;
      text-align: right;
@@ -122,6 +122,8 @@ body header h1{
     font-size: 2rem;
 
 }
+
+/* sections of the website */
 .standard{
     color: white;
     background-color: rgb(34, 32, 32, 0.7);
@@ -131,20 +133,14 @@ body header h1{
     
 }
 
-.standard h2{
-    background-color: rgb(47, 53, 52);
-    max-width: fit-content;
-    padding: 1%;
-    border-left: var(--bright) 2px solid;
-}
-
-.standard div{
+.standard >a >div{
     background-color: rgb(47, 53, 52);
     max-width: fit-content;
     padding: 1%;
     border-left: tomato 2px solid;   
 }
-main section img {
+
+main>section>img {
     width: 20%;
     height: auto;
     float: left;
@@ -161,6 +157,9 @@ main section img {
     
       
 }
+.bigbox h2{
+    font-size: 2rem;
+}
 
 .box2{
     width:100%;
@@ -175,6 +174,13 @@ main section img {
     
 }
 
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover{
+background-blend-mode: soft-light;
+}
 .box3{
     width:49.1%;
     height: auto;
@@ -237,11 +243,15 @@ main section img {
     border-right: var(--bright) solid 20px;
 }
 
+
+
 .contact {
-    font-size: 2rem;
+    font-size: 1.5rem;
  line-height: 2;
   font-family:'Nunito', sans-serif;
   list-style: none;
+  justify-content: center;
+  align-content: center;
 }
 
 .contact li{
