@@ -24,6 +24,10 @@ body{
     background-color: black;
     }
 
+a {
+    text-decoration: none;
+}
+
 /* header styling */
 
 header{
@@ -34,10 +38,10 @@ header{
 }
 
 header> h1 {
-    margin-bottom: -2%;
+    margin-bottom: -3%;
     z-index: 1;
     margin-left: 2%;
-    font-size: 3rem;
+    font-size: 3em;
 }
     
 
@@ -66,22 +70,28 @@ header> ul >li{
 }
 
 header ul li:hover {
-    background-color: rgb(18, 19, 16);
+    background-color: rgb(154, 204, 55);
     border: white 2px dotted;
     color: white;
 }
+
+
+
 header>ul> li> a {
 
 background-color: transparent;
-font-size: 20px;
-font-weight: 900;
+font-size: 1em;
+font-weight: 800;
 font-family: 'Nunito', sans-serif;
-padding: 20%;
+padding: 10%;
+
 }
 
 /* Header stripes */
 .stripe1{
-    background-color: var(--bright)
+    background-color: var(--bright);
+    margin-top: -1%;
+    
 }
 
 .stripe2{
@@ -137,7 +147,8 @@ body> header> h1{
     background-color: rgb(47, 53, 52);
     max-width: fit-content;
     padding: 1%;
-    border-left: tomato 2px solid;   
+    border-left: tomato 2px solid; 
+     
 }
 
 main>section>img {
@@ -149,7 +160,7 @@ main>section>img {
 }
 .bigbox{
     width:100%;
-    height: auto;
+    min-height: auto;
     border-left: solid var(--dark) 1px;
     border-top:var(--dark) 1px solid;
     border-bottom: var(--dark) 1px solid;
@@ -163,8 +174,8 @@ main>section>img {
 
 .box2{
     width:100%;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 30vh;
+    
     background-image: url("../pics/lights.jpg");
     background-size: cover;
     border-left: solid var(--bright) 1px;
@@ -217,9 +228,9 @@ background-blend-mode: soft-light;
     background-image: url("../pics/p1.jpg");
     background-position: center;
     background-size: cover;
-    border-left: solid var(--dark) 1px;
-    border-top: solid var(--dark) 1px;
-    border-bottom: solid var(--dark) 1px;
+    border-left: solid var(--middle) 1px;
+    border-top: solid var(--middle) 1px;
+    border-bottom: solid var(--middle) 1px;
     border-right: var(--bright) solid 20px;
 }
 .box6{
@@ -231,7 +242,7 @@ background-blend-mode: soft-light;
     border-left: solid var(--dark) 1px;
     border-top: solid var(--dark) 1px;
     border-bottom: solid var(--dark) 1px;
-    border-right: var(--bright) solid 20px;
+    border-right: var(--middle) solid 20px;
 }
 
 .box7{
@@ -287,6 +298,13 @@ footer {
         list-style: none;
     }
 
+    header> h1 {
+        margin-bottom: -7vh;
+        z-index: 1;
+        margin-left: 2%;
+        font-size: 2em;
+    }
+
     .main{ 
         flex-direction: column;
     }
@@ -300,4 +318,6 @@ footer {
 
        min-width: 100%;
    }
+
+
   }
