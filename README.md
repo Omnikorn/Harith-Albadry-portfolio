@@ -10,3 +10,8 @@ The first section of work is larger and more prominent that the other section. A
 
 
 ![Getting started](/pics/harith_portfolio.png)
+
+Links:
+
+Repository: https://github.com/Omnikorn/Harith-Albadry-portfolio.git
+link: https://omnikorn.github.io/Harith-Albadry-portfolio/
