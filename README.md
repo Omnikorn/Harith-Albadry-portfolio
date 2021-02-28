@@ -1,7 +1,7 @@
 # Harith-Albadry-portfolio
 Harith's Bootcamp portfolio
 
-This is my bootcamp portfolio website. Although aesthetically it does not look like the mock website provided functionally it is the same. 
+This is my bootcamp portfolio website. Although aesthetically it does not look like the mock website provided functionally it is the same as i did not want to just copy someone elses work/style. 
 
 the link in the nav bar connect to the corresponding section of the website. 
 There is a hero banner with a “catchy” slogan. 
