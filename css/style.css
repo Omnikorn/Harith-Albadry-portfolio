@@ -21,7 +21,7 @@ h2
 
 
 body{
-    background-color: black;
+    background-color: rgb(60, 58, 61);
     }
 
 a {
@@ -177,12 +177,14 @@ main>section>img {
     width:100%;
     min-height: 30vh;
     
-    background-image: url("../pics/lights.jpg");
-    background-size: cover;
-    border-left: solid var(--bright) 1px;
-    border-top: solid var(--bright) 1px;
-    border-bottom: solid var(--bright) 1px;
-    border-right: var(--dark) solid 20px;
+    background-image: url("../pics/yummybkg.png");
+    background-size:cover;
+    border-right: solid 20px transparent;
+    border-image: linear-gradient(0deg, rgb(98, 116, 218),#f0f);
+    border-image-slice: 1;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
     
 }
 
@@ -195,14 +197,18 @@ background-blend-mode: soft-light;
 }
 .box3{
     width:49.1%;
-    height: auto;
-    background-image: url("../pics/lens.jpg");
+    height: 20vh;
+    background-image: url("../pics/jsquiz2\ -\ Copy.png");
     
-    background-position: center;
+    background-position:contain;
+    
+    
+    border-right: solid 20px transparent;
+    border-image: linear-gradient(0deg, var(--dark),var(--middle));
+    border-image-slice: 1;
     border-left: solid var(--dark) 1px;
     border-top: solid var(--dark) 1px;
     border-bottom: solid var(--dark) 1px;
-    border-right: var(--middle) solid 20px;
     
 
 }
@@ -212,47 +218,56 @@ background-blend-mode: soft-light;
 
 .box4{
     width:49.1%;
-    height: auto;
-    background-image: url("../pics/engin.jpg");
+    height: 20vh;
+    background-image: url("../pics/weathebkg.jpg");
     background-position:center;
 
+    border-right: solid 20px transparent;
+    border-image: linear-gradient(0deg, rgb(178, 137, 216),var(--dark));
+    border-image-slice: 1;
     border-left: solid var(--dark) 1px;
     border-top: solid var(--dark) 1px;
     border-bottom: solid var(--dark) 1px;
-    border-right: var(--bright) solid 20px;
     
-
 }
 .box5{
     width:49.1%;
-    height: auto;
+    height: 20vh;
     background-image: url("../pics/p1.jpg");
     background-position: center;
     background-size: cover;
-    border-left: solid var(--middle) 1px;
-    border-top: solid var(--middle) 1px;
-    border-bottom: solid var(--middle) 1px;
-    border-right: var(--bright) solid 20px;
-}
-.box6{
-    width:49.1%;
-    height: auto;
-    background-image: url("../pics/blue1.jpg");
-    background-position: center;
-    background-size: cover;
+    border-right: solid 20px transparent;
+    border-image: linear-gradient(0deg, var(--bright),tomato,rgb(51, 28, 180));
+    border-image-slice: 1;
     border-left: solid var(--dark) 1px;
     border-top: solid var(--dark) 1px;
     border-bottom: solid var(--dark) 1px;
-    border-right: var(--middle) solid 20px;
+}
+.box6{
+    width:49.1%;
+    height: 20vh;
+    background-image: url("../pics/blue1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-right: solid 20px transparent;
+    border-image: linear-gradient(0deg,var(--bright),var(--middle),var(--dark));
+    border-image-slice: 1;
+    border-left: solid var(--dark) 1px;
+    border-top: solid var(--dark) 1px;
+    border-bottom: solid var(--dark) 1px;
+    
 }
 
 .box7{
     width:100%;
     height: auto;
+    border-right: solid 20px transparent;
+    border-image: linear-gradient(0deg, var(--dark),#f0f);
+    border-image-slice: 1;
     border-left: solid var(--dark) 1px;
     border-top: solid var(--dark) 1px;
     border-bottom: solid var(--dark) 1px;
-    border-right: var(--bright) solid 20px;
+    
 }
 
 
